@@ -33,7 +33,7 @@ e.g.
     .setName('ping')
     .setDescription('Returns Pong')
 
-    export const run  = (interaction: CommandInteraction) => {
+    export const run = (interaction: CommandInteraction) => {
 
     // Reply with Pong only visible to the user
 
@@ -50,7 +50,7 @@ They must export a discordjs event name string 'event' and a run function
 e.g
 
     import { CommandInteraction, Interaction } from  "discord.js";
-    import { dc } from  "../bot";
+    import { dc } from "../bot";
 
     export const event = 'message';
 
