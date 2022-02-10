@@ -26,14 +26,14 @@ Command files are put anywhere in the commands directory
 They must export both data and a run function
 e.g.
 
-    import { SlashCommandBuilder } from  '@discordjs/builders';
-    import { CommandInteraction } from  'discord.js';
+    import { SlashCommandBuilder } from '@discordjs/builders';
+    import { CommandInteraction } from 'discord.js';
 
-    export  const  data  =  new  SlashCommandBuilder()
+    export const data = new SlashCommandBuilder()
     .setName('ping')
     .setDescription('Returns Pong')
 
-    export  const  run  = (interaction: CommandInteraction) => {
+    export const run  = (interaction: CommandInteraction) => {
 
     // Reply with Pong only visible to the user
 
@@ -52,9 +52,9 @@ e.g
     import { CommandInteraction, Interaction } from  "discord.js";
     import { dc } from  "../bot";
 
-    export  const  event  =  'message';
+    export const event = 'message';
 
-    export  const  run  = (message: Message) => {
+    export const run = (message: Message) => {
         message.channel.send('Pong');
     }
 
