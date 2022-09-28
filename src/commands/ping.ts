@@ -6,7 +6,7 @@ import { CommandInteraction } from 'discord.js';
  */
 export const data = new SlashCommandBuilder()
     .setName('ping')
-    .setDescription('Returns Pong')
+    .setDescription('Returns Pong');
 
 /**
  * what is run when command is executed
@@ -14,5 +14,5 @@ export const data = new SlashCommandBuilder()
  */
 export const run = (interaction: CommandInteraction) => {
     // Reply with Pong only visible to the user
-    interaction.reply({ content: 'Pong', ephemeral: true })
-}
+    interaction.reply({ content: 'Pong', ephemeral: true });
+};
